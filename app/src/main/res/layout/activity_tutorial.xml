@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tutorial_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|bottom"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/index_0"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/circular_shape_yellow" />
+
+        <View
+            android:id="@+id/index_1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/circular_shape" />
+
+        <View
+            android:id="@+id/index_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/circular_shape" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

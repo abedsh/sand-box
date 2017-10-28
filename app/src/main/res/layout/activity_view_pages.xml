@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_fill"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/continueWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+
+        android:gravity="center"
+        android:text="Continue with"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/socialmedialogin_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/continueWith"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/fb_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/fb_icon" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/loginMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/socialmedialogin_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Or Login using your email"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginMsg"
+        android:layout_marginTop="30dp"
+        android:id="@+id/emailField"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:gravity="center"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordField"
+        android:layout_below="@+id/emailField"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/lostMyPass"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/passwordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lost my password"
+        android:layout_centerHorizontal="true"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lostMyPass"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/gradient_fill"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Not a member ?"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:text="Sign up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <!--android:src="@drawable/ic_splash"-->
+</RelativeLayout>
